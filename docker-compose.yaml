@@ -1,0 +1,8 @@
+
+services:
+  web:
+    image: gfthings
+    build: .
+    ports:
+      - 80:80
+
