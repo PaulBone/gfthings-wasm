@@ -54,7 +54,7 @@ export class ThreeViewer {
         
         // Create controls
         this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-        this.controls.enableDamping = true;
+        this.controls.enableDamping = false;
         this.controls.dampingFactor = 0.05;
         this.controls.screenSpacePanning = false;
         this.controls.minDistance = 10;
