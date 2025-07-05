@@ -14,6 +14,8 @@ print("Mock package added")
 
 print("Installing build123d and sqlite3...")
 await micropip.install(["build123d", "sqlite3"])
+print("Installing gfthings...")
+await micropip.install(["gfthings"])
 print("Installation completed")
 
 print("Importing JavaScript interfaces...")
@@ -26,6 +28,7 @@ print("JavaScript interfaces imported")
 print("Attempting to import build123d...")
 try:
     from build123d import *
+    from gfthings.Bin import Bin
     print("build123d imported successfully!")
 except ImportError as e:
     print(f"Failed to import build123d: {e}")

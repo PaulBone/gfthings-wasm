@@ -154,7 +154,9 @@ export class ThreeViewer {
             if (material.transparent) {
                 mesh.renderOrder = 1;
             }
-            
+          
+            // threejs uses Y-up so rotate our model for rendering.
+            mesh.rotation.x = -1 * Math.PI / 2.0;
             allMeshes.push(mesh);
             this.currentMeshes.push(mesh);
             this.scene.add(mesh);
