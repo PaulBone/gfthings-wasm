@@ -1,38 +1,32 @@
-# 3D Model Generator
+# Gridfinity Generator
 
-A web-based 3D model generator that creates parametric models using Python and WebAssembly. Generate STL files and view them in your browser!
+A web-based gridfinity generator that creates parametric models using
+gfthings, build123d and WebAssembly. Generate STL files and view them in
+your browser!
 
-## Features
+## Thanks
 
-- **Parametric 3D modeling** - Adjust dimensions with simple input fields
-- **Real-time 3D preview** - See your model instantly in the browser
-- **Multi-format export** - Download your models as STL, STEP, or BREP files
-- **Browser-based** - No software installation required
+This is based on https://github.com/Radther/build123dWebAssmGenDemo using
+that demo as a template/base for this project.  It is powered by
+https://github.com/PaulBone/gfthings which is built using
+https://github.com/gumyr/build123d.
 
-## Requirements
+I'd like to acknowledge the help of the build123d folks for providing a
+template, experiments and such.
 
-- Python 3.13.5 (or compatible version)
-- Modern web browser
+## Usage
 
-## Getting Started
+1. **Visit the site** http://gfthings.bone.id.au
 
-1. **Run the server:**
-   ```bash
-   python server.py
-   ```
+That's the only step!  Well, except for the other steps:
 
-2. **Open your browser** and go to the URL shown in the terminal (typically `http://localhost:8000`)
+2. **Wait for loading**
 
-3. **Adjust parameters** in the input fields (length, width, thickness, hole diameter)
+3. **Choose options and parameters** the options on the left allow you
+   to customise your bin.
 
-4. **Click "Generate Model"** to create and view your 3D model
+4. **Click generate** to create and view your 3D model, there will be a
+   small delay.
 
-5. **Download files** in your preferred format (STL, STEP, or BREP) when ready
+5. **Inspect the result** and download the file, or go back to step 3.
 
-## What it does
-
-Creates a parametric box with a center hole using the build123d CAD library. Perfect for learning 3D modeling concepts or generating simple mechanical parts.
-
----
-
-Built with Python 3.13.5, Pyodide, Three.js, and build123d. 
